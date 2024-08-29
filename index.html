@@ -13,6 +13,9 @@
 
     <style>
         /* Estilo general */
+
+
+
         body {
 
             /* Color de fondo único */
@@ -82,6 +85,8 @@
 
         section {
             padding: 50px 0;
+
+
         }
 
         h2 {
@@ -93,10 +98,31 @@
             margin-bottom: 30px;
         }
 
+        h3 {
+            color: #8D673C;
+            font-size: 2rem;
+            font-weight: 400;
+
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
         p {
             font-size: 1.2rem;
             line-height: 1.6;
             font-weight: 400;
+        }
+
+        a {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            font-weight: 400;
+            color: #8D673C;
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
         }
 
         .img-fluid {
@@ -171,6 +197,14 @@
                 font-size: 1rem;
                 padding: 10px;
             }
+
+            section {
+                padding: 50px;
+            }
+
+            .image__profile {
+                height: 11rem !important;
+            }
         }
 
         .firstSection {
@@ -188,7 +222,17 @@
         .fourSection {
             background-color: #FBF7F3 !important;
         }
+
+        .image__profile {
+            height: 13rem;
+            border-radius: 7rem;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            max-width: 12rem;
+        }
     </style>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -241,17 +285,74 @@
                 <div class="col-lg-6 d-flex align-items-center order-lg-2">
                     <div>
                         <h2>Terapias Alternativas</h2>
-                        <p>Hola, soy el Terapeuta Jairo Rojas A. Ofrecemos terapias alternativas que pueden complementar
-                            tu
-                            tratamiento convencional. Estas técnicas naturales están diseñadas para mejorar tu bienestar
-                            general y ayudarte a sentirte mejor.</p>
+                        <p>Hola, somos los terapeutas Jairo , Carlos, y Rodrigo. Ofrecemos terapias alternativas que
+                            pueden complementar tu tratamiento convencional. Estas técnicas naturales están diseñadas
+                            para mejorar tu bienestar general y ayudarte a sentirte mejor.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="biomagnoterapia" class="secondSection">
+    <section id="quienes-somos" class="firstSection" data-aos="fade-left" data-aos-duration="2000">
+        <div class="container p-4">
+            <div class="row d-flex align-items-center">
+
+                <div class="col-l2">
+                    <div>
+                        <h2 class="text-center">¿Quiénes somos?</h2>
+                    </div>
+                    <div class="row justify-content-center align-items-center text-center">
+                        <div class="col-6 col-md-4">
+                            <div class="row">
+                                <div class="col-12 mb-1">
+                                    <h3>Jairo Rojas</h3>
+                                </div>
+                                <div class="col-12 mb-4"><img src="jairo.jpeg" class="w-100 image__profile"
+                                        alt="Jairo Rojas" /></div>
+                                <div class="col-12 mb-1">
+                                    <p>Contacto:</p>
+                                </div>
+                                <div class="col-12 mb-3"><a href="tel:+57313865834">+57 313 865 834</a></div>
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="row">
+                                <div class="col-12 mb-1">
+                                    <h3>Rodrigo Ayerbe</h3>
+                                </div>
+                                <div class="col-12 mb-4"> <img src="notfound.jpeg" class="w-100 image__profile"
+                                        alt="Carlos Cabrera" /></div>
+                                <div class="col-12 mb-1">
+                                    <p>Contacto:</p>
+                                </div>
+                                <div class="col-12 mb-3"><a href="tel:+573173800006">+57 317 380 0006</a></div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="row">
+                                <div class="col-12 mb-1">
+                                    <h3>Carlos Cabrera</h3>
+                                </div>
+                                <div class="col-12 mb-4"><img src="carlos.jpeg" class="w-100 image__profile"
+                                        alt="Carlos Cabrera" /></div>
+
+                                <div class="col-12 mb-1">
+                                    <p>Contacto:</p>
+                                </div>
+                                <div class="col-12 mb-3"><a href="tel:+573173221019">+57 317 322 1019</a></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="biomagnoterapia" class="secondSection" data-aos="fade-right" data-aos-duration="2000">
         <div class="container p-4">
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6 d-flex justify-content-center order-lg-2">
@@ -260,16 +361,16 @@
                 <div class="col-lg-6 d-flex align-items-center order-lg-1">
                     <div>
                         <h2>Biomagnoterapias</h2>
-                        <p>La biomagnoterapia es una técnica que utilizo para equilibrar los campos magnéticos en tu
-                            cuerpo. Esto puede ayudar a mejorar tu salud general y tratar diversas afecciones de manera
-                            natural.</p>
+                        <p>La biomagnetoterapia es una técnica que utilizamos para equilibrar los campos magnéticos en
+                            tu cuerpo. Esto puede ayudar a mejorar tu salud general y tratar diversas afecciones de
+                            manera natural.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="zapperoterapia" class="thirdSection">
+    <section id="zapperoterapia" class="thirdSection" data-aos="fade-left" data-aos-duration="2000">
         <div class="container p-4">
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6 d-flex justify-content-center order                <div class=" col-lg-6 d-flex
@@ -279,16 +380,16 @@
                 <div class="col-lg-6 d-flex align-items-center order-lg-2">
                     <div>
                         <h2>Zapperoterapias</h2>
-                        <p>En la zapperoterapia, utilizo dispositivos para eliminar patógenos del cuerpo. Esta técnica
-                            puede ayudarte a mejorar tu salud al eliminar parásitos y bacterias que podrían estar
-                            afectándote.</p>
+                        <p>En la zapperoterapia, utilizamos dispositivos para eliminar patógenos del cuerpo. Esta
+                            técnica puede ayudarte a mejorar tu salud al eliminar parásitos y bacterias que podrían
+                            estar afectándote.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="electroterapia" class="fourSection">
+    <section id="electroterapia" class="fourSection" data-aos="fade-right" data-aos-duration="2000">
         <div class="container p-4">
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6 d-flex justify-content-center order-lg-2">
@@ -297,8 +398,8 @@
                 <div class="col-lg-6 d-flex align-items-center order-lg-1">
                     <div>
                         <h2>Electroterapias</h2>
-                        <p>Utilizo la electroterapia para aplicar corrientes eléctricas de baja intensidad que ayudan a
-                            aliviar el dolor y acelerar la recuperación física. Es una técnica eficaz para tratar
+                        <p>Utilizamos la electroterapia para aplicar corrientes eléctricas de baja intensidad que ayudan
+                            a aliviar el dolor y acelerar la recuperación física. Es una técnica eficaz para tratar
                             diversas afecciones.</p>
                     </div>
                 </div>
@@ -309,10 +410,10 @@
     <section id="contacto">
         <div class="container text-center">
             <h2>Testimonios</h2>
-            <div class="row mt-4">
+            <div class="row mt-4 align-items-center">
                 <div class="col-md-6">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315"
+                        <iframe class="w-100"" height=" 315"
                             src="https://www.youtube.com/embed/wq7HyH9lc84?si=Lc4y6mZIINS2ggGO"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -321,9 +422,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/jzFwftlVfYM?si=Ydf4DSDUo1P099EQ"
-                            title="YouTube video player" frameborder="0"
+                        <iframe class=" w-100" src="https://www.youtube.com/embed/jzFwftlVfYM?si=Ydf4DSDUo1P099EQ"
+                            height="315" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
@@ -334,22 +434,27 @@
 
     <!-- Sección de Contacto -->
     <section id="contacto">
-        <div class="container text-center">
+        <div class="container text-center p-3">
             <h2>Contacto</h2>
-            <p>¿Tienes preguntas sobre nuestros servicios? Contáctame por WhatsApp y con gusto te proporcionaré toda la
+            <p>¿Tienes preguntas sobre nuestros servicios? Contactanos por WhatsApp y con gusto te proporcionaremos toda
+                la
                 información que necesites.</p>
-            <a href="https://wa.me/3132865834" class="btn btn-success">Enviar mensaje</a>
+            <a href="https://wa.me/+573170703895" class="btn btn-success mt-4">Enviar mensaje</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p><strong>Contacto:</strong> +57 313 286 5834</p>
+            <p><strong>Contacto:</strong> +57 317 070 3895</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
